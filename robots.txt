@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savemoremoney.in/sitemap.xml
