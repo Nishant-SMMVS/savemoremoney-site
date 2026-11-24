@@ -216,3 +216,11 @@ h3, .h3 { font-size: 1.4rem; font-weight: 600; }
 .toc { border: 1px solid var(--line); border-radius: 10px; padding: 18px 22px; }
 .toc p { margin: 0 0 8px; }
 .toc ol { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 6px; }
+.search input { width: 100%; font: inherit; font-size: 1.05rem; padding: 14px 18px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink); margin-block: 20px 16px; }
+.search input:focus { outline: 2px solid var(--green); outline-offset: 2px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+button.chip { background: transparent; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--green-ink); }
+.chip[aria-pressed="true"] .count { color: inherit; }
+.to-top { position: fixed; right: calc(20px + env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: 46px; height: 46px; border-radius: 50%; border: 0; background: var(--green); color: var(--green-ink); font-size: 1.4rem; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.18); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
+.to-top.show { opacity: 1; pointer-events: auto; }
