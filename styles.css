@@ -239,3 +239,5 @@ button.chip { background: transparent; cursor: pointer; }
 .pillar-list { margin: 4px 0 6px; padding-left: 1.1em; display: flex; flex-direction: column; gap: 8px; }
 .pillar-list a { color: var(--ink); }
 @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 36px; } .pillars { grid-template-columns: 1fr; } }
+.strip-mob-wrap { display: none; }
+@media (max-width: 900px) { .strip-desk { display: none; } .strip-mob-wrap { display: block; } }
