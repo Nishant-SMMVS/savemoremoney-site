@@ -213,3 +213,6 @@ h3, .h3 { font-size: 1.4rem; font-weight: 600; }
 .section > .wrap.split, .hero > .wrap.split { display: grid; }
 .section > .wrap.two { display: grid; }
 @media (max-width: 860px) { .section > .wrap.split, .hero > .wrap.split { grid-template-columns: 1fr; } }
+.toc { border: 1px solid var(--line); border-radius: 10px; padding: 18px 22px; }
+.toc p { margin: 0 0 8px; }
+.toc ol { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 6px; }
