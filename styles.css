@@ -224,3 +224,4 @@ button.chip { background: transparent; cursor: pointer; }
 .chip[aria-pressed="true"] .count { color: inherit; }
 .to-top { position: fixed; right: calc(20px + env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: 46px; height: 46px; border-radius: 50%; border: 0; background: var(--green); color: var(--green-ink); font-size: 1.4rem; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.18); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
 .to-top.show { opacity: 1; pointer-events: auto; }
+.hero-search input { max-width: 560px; }

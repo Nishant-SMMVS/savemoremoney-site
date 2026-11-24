@@ -19,7 +19,7 @@ shown.textContent=n;none.hidden=n>0;latest.hidden=!(cur==='all'&&!t);title.first
 chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.filter===cur?'true':'false');});}
 chips.forEach(function(c){c.addEventListener('click',function(){cur=c.dataset.filter;try{history.replaceState(null,'',cur==='all'?location.pathname:'#'+cur);}catch(e){}apply();});});
 q.addEventListener('input',apply);
-var h=(location.hash||'').slice(1);if(h==='diary'||names[h]){cur=h;}apply();})();
+try{var qq=new URLSearchParams(location.search).get('q');if(qq){q.value=qq;}}catch(e){}var h=(location.hash||'').slice(1);if(h==='diary'||names[h]){cur=h;}apply();})();
 </script></main><footer class="foot"><div class="wrap foot-grid">
 <div class="foot-intro"><p class="foot-title">Save More Money</p><p>Personal finance for Indians aged 40+, from Nishant Gupta.</p>
 <p class="mono">savemoremoney.in@gmail.com</p></div>
